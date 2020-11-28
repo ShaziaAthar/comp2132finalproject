@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FINAL PROJECT</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="container">
+    <div>
+        <header>
+           <div id="heading">
+             <img id="left" src="images/dice-1.jpg">
+             <img id="left" src="images/dice-2.jpg">
+             <img id="left" src="images/Dice-3.jpg"><h1>DICE GAME
+             <img id="right"src="images/dice-6.jpg">
+             <img id="right"src="images/dice-5.jpg">
+             <img id="right"src="images/dice-4.jpg">
+             </h1>
+           </div>
+         </header>   
+<!-- You wrapper --> 
+    <div class="wrapper" id="you"><h1>YOU</h1>
+           <h1 style="background-color: black;color:white"> 
+            Your Dice</h1>
+        <div id="whiteboxleft"> <h2>Dice # 1</h2><img id='dice1'>
+           </div>
+           <div id="whiteboxright"> <h2>Dice # 2</h2><img id='dice2'>
+           </div>
+                 <h1>Your Score</h1>
+            <div id="whiteboxleft">
+               <h2> Score This Round</h2> 
+               <h2 id="yourscore"></h2>
+            </div>
+            <div id="whiteboxright"><h2>Total Score</h2>
+            <h2 id='yourtotalscore'></h2>
+            
+           </div>
+
+    </div><!-- End You wrapper-->
+
+    <!--Oppenent Wrapper-->
+    <div class="wrapper"id="opponent"><h1>OPPONENT</h1>
+           <h1 style="background-color: black;color:white">Opponent's Dice</h1>
+        <div id="whiteboxleft"> <h2>Dice # 1</h2><img id="dice3">
+            </div>
+            <div id="whiteboxright"> <h2>Dice # 2</h2><img id='dice4'>
+            </div>
+                 <h1>Opponent's Score</h1>
+            <div id="whiteboxleft">
+                 <h2>Score this Round</h2>
+                 <h2 id="oppscore"></h2>
+            </div>
+            <div id="whiteboxright">
+                 <h2>Total Score</h2>
+                 <h2 id="opptotalscore"></h2>
+                 <section id="pop-up">
+                    <h2>Hello, Player</h2>
+                   <!-- <button id="btn-close">&#10005;</button>-->
+                    <h1>Congratulations.</h1>
+                    <h1 id="win">You Win.</h1>
+                 </section>
+           </div>
+    </div><!--End Opponent Wrapper-->
+    
+    <button id="buttonnewgame">New Game</button>
+    <button id="buttonrolldice">Roll Dice</button>
+
+</div>
+      <button id="hidestartbtn">Hide</button>  
+     <h1 style="margin-left:3em">How to play:</h1>   
+     <div id="start"> 
+     <ul>
+         <li>To start click the 'Roll Dice' button.</li>
+         <li>To advance to the next round,click the 'Roll Dice'button again.</li>
+         <li>After three rounds,the game is over and the final score is calculated. </li>
+         <li>If you want to play,click the 'New Game'button or refresh the page again.</li>
+    </ul>
+</div>
+<hr>
+    
+    <button id="hiderulesbtn">Hide</button>  
+    <h1 style="margin-left:3em">Rules:</h1>
+<div id="rules">
+    <ul>
+        <li>Each round,you and the computer both roll a pair of dice.</li>
+        <li>Your score for that round will be based on the sum of the dice.</li>
+        <li>If you roll doubles(e.g. a3 and a3)then your score is multiplied by 2.</li>
+        <li>Rolling a 1 will give you a score of 0 for that round.
+        <li>The player who has the most point at the end ofthree rounds is the winner.</li>
+    </ul>
+</div>
+<hr>
+    
+</div><!--End container -->
+
+<script src="scripts/jquery-3.4.1.min.js"></script>
+
+<script src="scripts/final.js"></script>
+</body>
+
+</html>

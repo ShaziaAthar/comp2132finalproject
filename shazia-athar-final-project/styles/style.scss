@@ -1,0 +1,157 @@
+$color: darkblue;
+$boxcolor:white;
+.container{
+    width :80%;
+    margin:auto;
+    background-color: bisque;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: lightblue;
+    color:$color;
+}
+ .wrapper {
+    background-color: aqua;
+    width :70%;
+    margin: auto;
+}
+img{
+    width:70px;
+    height:70px;
+}
+
+ #heading{
+    margin-bottom: 3em;
+    font-size: 1em;
+    text-align: center;
+    
+    #left{  
+         float:left;
+         margin-left: 2em;
+    
+     }
+     #right{
+        float:right;
+        margin-right: 1em;
+     }
+
+}
+@mixin largebox($width,$textalign,$border){
+    width:$width;
+    text-align:$textalign;
+    border:$border
+}
+#you{
+    float:left;
+    margin-left:4em;
+    @include largebox(40%,center,solid black 2px)
+}
+#opponent{
+    float:right;
+    margin-right:4em;
+    @include largebox(40%,center,solid black 2px)
+}
+
+@mixin box($width,$height,$backgroundcolor,$text-align,$marginbottom){
+    width:$width;
+    height:$height;
+    background-color: $backgroundcolor;
+    text-align:$text-align;
+    margin-bottom: $marginbottom;
+}
+#whiteboxleft{
+    float:left;
+    margin-left: 1em;
+    @include box(45%,10em,$boxcolor,center,.5em)
+}
+
+#whiteboxright{
+    float:right;
+   margin-right: 1em;
+    @include box(45%,10em,$boxcolor,center,.5em);
+}
+
+#buttonnewgame{
+    font-size: 1.5em;
+    margin-left: 17em;
+    margin-top: 1em;
+    background-color: aqua;
+}
+#buttonrolldice{
+    font-size: 1.5em;
+    margin-left: 5em;
+    margin-top: 1em;
+    background-color: aqua;
+}
+#pop-up{
+    width:300px;
+    padding:10px;
+    background-color: darkblue;
+    color:white;
+    border:solid 1px black;
+    box-shadow:0px 0px 5px yellow, 5px 5px 5px black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    opacity:0;
+    pointer-events: none;
+}   
+hr{
+    background-color:black;
+    //height:2px;
+}
+#hidestartbtn{
+    float:right;
+    margin-right:4em;
+    margin-top:1em;
+    font-size: 1em;
+}
+#hiderulesbtn{
+    float:right;
+    margin-right:4em;
+    margin-top:1em;
+    font-size: 1em;
+}
+#start{
+    margin-left:4em;
+}
+#rules{
+    margin-left:4em;
+}
+/*
+#oppdice1{
+    float:left;
+    margin-left: 10px;
+    @include box(46%,150px,$boxcolor,center,10px);
+}
+#oppdice2{
+    float:right;
+    margin-right: 10px;
+    @include box(46%,150px,$boxcolor,center,10px);
+}
+
+#yourscore{
+    float:left;
+    margin-left: 10px;
+    @include box(46%,150px,$boxcolor,center,10);
+}
+#yourtotalscore{
+    float:right;
+    margin-right: 10px;
+   @include box(46%,150px,$boxcolor,center,10px);
+}
+#oppscore{
+    float:left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    @include box(46%,150px,$boxcolor,center,10px);
+}
+#opptotalscore{
+    float:right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+   @include box(46%,150px,$boxcolor,center,10px);
+}
+*/
