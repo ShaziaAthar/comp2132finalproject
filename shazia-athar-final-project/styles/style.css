@@ -129,38 +129,5 @@ hr {
   margin-left: 4em;
 }
 
-/*
-#oppdice1{
-    float:left;
-    margin-left: 10px;
-    @include box(46%,150px,$boxcolor,center,10px);
-}
-#oppdice2{
-    float:right;
-    margin-right: 10px;
-    @include box(46%,150px,$boxcolor,center,10px);
-}
 
-#yourscore{
-    float:left;
-    margin-left: 10px;
-    @include box(46%,150px,$boxcolor,center,10);
-}
-#yourtotalscore{
-    float:right;
-    margin-right: 10px;
-   @include box(46%,150px,$boxcolor,center,10px);
-}
-#oppscore{
-    float:left;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    @include box(46%,150px,$boxcolor,center,10px);
-}
-#opptotalscore{
-    float:right;
-    margin-right: 10px;
-    margin-bottom: 10px;
-   @include box(46%,150px,$boxcolor,center,10px);
-}
-*/
+
